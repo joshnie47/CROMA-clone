@@ -13,7 +13,7 @@ body{
     background-color: black;
 }
 
-.image {
-    width: 100%;
+#image {
+    width: 15%;
     height: auto;
 }
