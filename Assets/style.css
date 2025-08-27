@@ -4,7 +4,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     border: 0;
@@ -52,7 +52,7 @@ body{
     height: 41px;
     position: absolute;
     left: -150px;
-    bottom: -3px;
+    bottom: -7px;
     border-radius: 5px;
     padding: 3px 0px 2px 25px;
     border: none;
@@ -63,13 +63,13 @@ body{
 }
 
 
-.search-button {
-    width: 0px;
-    height: 0px;
+#search-button {
+    width: 20px;
+    height: 20px;
     position: absolute;
-    left: 280px;
-    bottom: 25px;
-    border: none;  
+    left: 285px;
+    bottom: 1px;
+
 }
 
 #location{
@@ -178,42 +178,62 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
   .header {
-    position: relative;
     width: 100%;
-    height: 95px;
+    height: 65px !important;
   }
   #menu{
-    width: 24px;
-    height: 13px;
+    width: 18px;
+    height: 11px;
     position: absolute;
-    top: 10px;
-    left: -23px;
+    top: 7px;
+    left: -25px;
   }
   #image{
-    width: 75px;
-    height: 25px;
+    margin: 0;
+    width: 63px;
+    height: 18px;
     position: absolute;
-    left: -9px;
+    left: 15px;
+    bottom: 51px;
   }
   #search-box{
     width: 300px;
     height: 29px;
     left: 30px;
     bottom: -40px;
-    position: relative;
   }
   .search-input{
-    width: 250px;
-    height: 29px;
-    left: -15px;
-    top: -10px;
+    font-size: 8px;
+    padding: 5px 15px 5px 25px;
+    width: 235px;
+    height: 22px;
+    left: -20px;
+    top: -15px;
     border-radius: 8px;
   }
-  .search-button{
-    font-size: 5px;
-    left: -10px;
-    bottom: 28px
+  ::placeholder {
+    color: black;
+  }
+  #search-button{
+    width: 13px;
+    height: 13px;
+    left: -13px;
+    bottom: 25px;
+  }
+  #name-menu{
+    display: none;
+  }
+  #user{
+    width: 20px;
+    height: 20px;
+    bottom: 10px;
+
   }
 
   
