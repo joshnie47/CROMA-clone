@@ -4,7 +4,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     border: 0;
@@ -176,7 +176,40 @@ body{
     background-color: rgba(255,255,255,0.5);
     display: inline-block;
 }
+.products-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(580px,650px);
+    width: 100%;
+    position: relative;
+    
+}
+.products-silder{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 
+}
+.product-card img{
+    width: 100px;
+    height: 114px;
+}
+.prev,.next{
+    width: 30px;
+    height: 30px;
+
+}
+.prev{
+    position: absolute;
+    top: 689px;
+    left: 30px;
+}
+.next{
+    position: absolute;
+    top: 30px;
+    
+}
 @media only screen and (max-width: 427px) {
 body {
     width: 100%;
@@ -280,6 +313,7 @@ body {
     width: 20px;
     height: 2px;
 }
+
 
   
   
