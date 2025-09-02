@@ -238,6 +238,7 @@ body{
     transform: translate(0px,600px);
     position: relative;
 }
+
 h2{
     font-size: 24px;
     color: white;
@@ -257,6 +258,32 @@ h2{
 .offer-card img{
     width: 212px;
     height: 60px;
+}
+.Special-container{
+    width: 1024px;
+    height: 350px;
+    transform: translate(0px,650px);
+    padding: 0px 50px;
+
+}
+.Special-slider{
+    width: 994px;
+    height: 294px;
+    display: grid;
+    column-gap: 0px;
+    row-gap: 0px;
+    grid-template-columns: repeat(8,1fr);
+    margin: 0px;
+    padding: 0px;
+
+}
+.Special-slider img{
+    width: 121px;
+    height: 139px;
+    display: block;
+}
+#special{
+    transform: translate(0px,-52px);
 }
 
 @media only screen and (max-width: 427px) {
@@ -364,7 +391,7 @@ body {
 }
 .products-container{
     width: 415px;
-    height: 212px;
+    height: 220px;
     transform: translate(20px,210px);
     padding: 15px;
     margin: 0px -15px;
@@ -384,6 +411,23 @@ body {
 #prev1,#next1{
     display: none;
 }
+.offer-container{
+    width: 375px;
+    height: 109px;
+    transform: translate(-40px,230px);
+}
+h2{
+    font-size: 18px;
+    padding: 0px 15px;
+    color: white;
+}
+.offer-card{
+    width: 360px;
+    height: 66px;
+    padding: 0px 15px;
+    gap: 5px;
+}
+
 
 
 
