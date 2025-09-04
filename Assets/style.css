@@ -267,8 +267,8 @@ h2{
 
 }
 .Special-slider{
-    width: 994px;
-    height: 294px;
+    width: 976px;
+    height: 290px;
     display: grid;
     column-gap: 0px;
     row-gap: 0px;
@@ -278,12 +278,16 @@ h2{
 
 }
 .Special-slider img{
-    width: 121px;
-    height: 139px;
+    width: 121.76px;
+    height: auto;
     display: block;
+    object-fit: cover;
 }
 #special{
     transform: translate(0px,-52px);
+}
+.extra-image{
+    display: none;
 }
 
 @media only screen and (max-width: 427px) {
@@ -426,6 +430,18 @@ h2{
     height: 66px;
     padding: 0px 15px;
     gap: 5px;
+}
+.Special-container{
+    display: none;
+}
+.extra-image{
+    width: 425px;
+    height: 605px;
+    transform: translate(0px,400px);
+}
+#special{
+    font-size: 18px;
+    color: white;
 }
 
 
