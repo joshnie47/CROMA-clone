@@ -12,19 +12,28 @@ body{
     overflow-x: hidden;
 }
 .header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     width: 100%;
     height: 78px; 
     background-color: black; 
-    position: relative; 
+    
+}
+.header .inner{
+    position: relative;
+    width: 100%;
+
 }
 
-#menu{
+#menubtn{
     margin:0px 0px 0px 30px;
     padding: 0px;
     position: absolute;
-    left: 200px;
+    left: 205px;
     top: 25px;
-    width: 35px;
+    width: 30px;
     height: 25px;;
 }
 #name-menu{
@@ -47,6 +56,7 @@ body{
 #search-box{
     position: relative;
     left: 500px;
+    top: -53px;
 }
 .search-input{
     width: 462px;
@@ -77,7 +87,7 @@ body{
     height: 18px;
     position: absolute;
     left: 950px;
-    bottom: 30px;
+    top: 35px;
 }
 
 .address {
@@ -85,24 +95,24 @@ body{
     font-size: 12px;
     position: absolute;
     left: 972px;
-    bottom: 31px;
+    top: 38px;
 }
 #pencil{
     position: absolute;
     left: 1064px;
-    bottom: 33px;
+    top: 40px;
     width: 7px;
     height: 9px;
 }
 #user{
     position: absolute;
-    transform: translate(1095px,-33px);
+    transform: translate(1095px,-75px);
     width: 30px;
     height: 27px;
 }
 #cart{
     position: absolute;
-    transform: translate(1155px,-29px);
+    transform: translate(1155px,-72px);
     width: 20px;
     height: 23px;
 }
@@ -111,7 +121,7 @@ body{
     height: 15px;
     background-color: #00BA99;
     position: absolute;
-    transform: translate(1165px,-31px);
+    transform: translate(1165px,-76px);
     font-size: 10px;
     display: flex;
     justify-content: center;
@@ -122,7 +132,7 @@ body{
     position: relative;
     width: 1270px;
     height: 700px;
-    transform: translate(0,0px);
+    transform: translate(0,78px);
     box-shadow: 0 6px 15px rgb(0,0,0,0.1);
 }
 .slider{
@@ -168,7 +178,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(0,-135px);
+    transform: translate(0,-60px);
 }
 .dot{
     height: 2px;
@@ -181,7 +191,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(30px,-115px);
+    transform: translate(30px,-30px);
     width: 100%;
     max-width: 1215px;
     padding: 40px;
@@ -236,7 +246,7 @@ body{
     height: 153px;
     margin: 10px 0px 0px 50px;
     padding: 50px 0px 0px;
-    transform: translate(30px,-150px);
+    transform: translate(30px,-30px);
     position: relative;
 }
 
@@ -263,7 +273,7 @@ h2{
 .Special-container{
     width: 1100px;
     height: 350px;
-    transform: translate(30px,-150px);
+    transform: translate(30px,30px);
     padding: 0px 50px;
 
 }
@@ -294,7 +304,7 @@ h2{
     width: 1024px;
     height: 249px;
     padding: 0px 50px 0px 0px;
-    transform: translate(30px,-90px);
+    transform: translate(30px,100px);
     
 }
 #Latest-launch{
@@ -317,7 +327,7 @@ h2{
 .whats-container{
     width: 1024px;
     height: 348px;
-    transform: translate(80px,0px);
+    transform: translate(80px,200px);
 }
 #whats-title{
     transform: translate(0px,-50px);
@@ -339,7 +349,7 @@ h2{
 .monsoon-container{
     width: 1120px;
     height: 465px;
-    transform: translate(80px,30px);
+    transform: translate(80px,250px);
     overflow: hidden;
 }
 #monsoon{
@@ -408,17 +418,17 @@ h2{
     padding: 0;    
 }
 .prev2{
-    transform: translate(50px,-155px);
+    transform: translate(50px,0px);
 
 }
 .next2{
-    transform: translate(1200px,-175px);
+    transform: translate(1200px,0px);
 }
 .deals-container{
     width: 1024px;
     height: 249px;
     padding: 0px 50px 0px 0px;
-    transform: translate(30px,50px);
+    transform: translate(30px,290px);
     
 }
 #deals-launch{
@@ -441,7 +451,7 @@ h2{
 .day-container{
     width: 1024px;
     height: 348px;
-    transform: translate(80px,170px);
+    transform: translate(80px,420px);
 }
 #day-title{
     transform: translate(0px,-50px);
@@ -464,7 +474,7 @@ h2{
     width: 1024px;
     height: 249px;
     padding: 0px 50px 0px 0px;
-    transform: translate(30px,280px);
+    transform: translate(30px,540px);
     
 }
 #worry-launch{
@@ -487,7 +497,7 @@ h2{
 .silder2-container{
     width: 1255px;
     height: 600px;
-    transform: translate(0px,330px);
+    transform: translate(0px,570px);
 }
 .image-container{
     display: flex;
@@ -534,7 +544,7 @@ h2{
 .Exp-container{
     width: 100%;
     height: 372px;
-    transform: translate(70px,430px);
+    transform: translate(70px,650px);
 }
 .Exp-container img{
     width: 1130px;
@@ -547,7 +557,7 @@ h2{
 .Exclusively-container{
     width: 100%;
     height: 137px;
-    transform: translate(70px,280px);
+    transform: translate(70px,540px);
 }
 .Exclusively-slider{
     width: 1002px;
@@ -565,7 +575,7 @@ h2{
 .Exclusively-container2{
     width: 100%;
     height: 257px;
-    transform: translate(70px,320px);
+    transform: translate(70px,570px);
 }
 .Exclusively-container2 img{
     width: 550px;
@@ -574,7 +584,7 @@ h2{
     margin-right: 10px;
 }
 .whycroma-container{
-    transform: translate(70px,450px);
+    transform: translate(70px,730px);
 }
 #whycroma{
     transform: translate(0px,-60px);
@@ -587,7 +597,7 @@ h2{
 .brand-container{
     width: 1130px;
     height: 200px;
-    transform: translate(70px,490px);
+    transform: translate(70px,790px);
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -613,10 +623,10 @@ h2{
 
 }
 .prev3{
-    transform: translate(40px,360px);
+    transform: translate(40px,665px);
 }
 .next3{
-    transform: translate(1200px,335px);
+    transform: translate(1200px,635px);
 }
 @media only screen and (max-width: 427px) {
 body {
