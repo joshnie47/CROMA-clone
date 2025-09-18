@@ -1,22 +1,20 @@
-*{
-    box-sizing: border-box;  
-}
+
 body{
     width: 100vw;
     height: 100vh;
+    max-width: 1270px;
     padding: 0;
     margin: 0;
     border: 0;
     font-family: sans-serif;
     background-color: #191919;
-    overflow-x: hidden;
 }
 .header {
-    overflow: hidden;
     position: fixed;
     top: 0;
     z-index: 1000;
     width: 100%;
+    max-width: 1270px;
     height: 78px; 
     background-color: black; 
     
@@ -24,7 +22,6 @@ body{
 .header .inner{
     position: relative;
     width: 100%;
-
 }
 
 #menubtn{
@@ -175,6 +172,7 @@ body{
 
 .dots-container{
     margin-top: 20px;
+    max-width: 1215px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,10 +241,12 @@ body{
 }
 .offer-container{
     width: 100%;
+    max-width: 1180px;
     height: 153px;
     margin: 10px 0px 0px 50px;
     padding: 50px 0px 0px;
     transform: translate(30px,-30px);
+    overflow: hidden;
     position: relative;
 }
 
@@ -537,9 +537,9 @@ h2{
     transform: translate(0px,-60px);
 }
 .dots-container2{
-    width: 100%;
+    width: 500px;
     height: 16px;
-    transform: translate(500px,290px);
+    transform: translate(440px,530px);
 }
 .Exp-container{
     width: 100%;
