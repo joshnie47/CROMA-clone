@@ -2,7 +2,7 @@
     box-sizing: border-box;  
 }
 body{
-    width: 1270px;
+    width: 100vw;
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -23,6 +23,7 @@ body{
 .header .inner{
     position: relative;
     width: 100%;
+    height: 78px;
 }
 
 #menubtn{
@@ -32,7 +33,47 @@ body{
     left: 205px;
     top: 25px;
     width: 30px;
-    height: 25px;;
+    height: 25px;
+    cursor: pointer;
+}
+.nav-tab{
+    width: 350px;
+    height: 900px;
+    display: none;
+    position: fixed;
+    transform: translate(0px,-19px);
+}
+
+.item-parent1{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #353535;       
+}
+.navigation-1{
+    display: flexbox;
+    flex-direction: column;
+}
+.tablink{
+    width: 280px;
+    height: 54px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.tablink > img{
+    width: 35px;
+    height: 35px;
+}
+#closebtn{
+    margin:0px 0px 0px 30px;
+    padding: 0px;
+    transform: translate(205px,-8px);
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
 }
 #name-menu{
     font-family: sans-serif;
@@ -52,9 +93,8 @@ body{
     height: 60px; 
 }
 #search-box{
-    position: relative;
-    left: 500px;
-    top: -53px;
+    transform: translate(500px,0px);
+    position: fixed;
 }
 .search-input{
     width: 462px;
@@ -103,14 +143,14 @@ body{
     height: 9px;
 }
 #user{
-    position: absolute;
-    transform: translate(1095px,-75px);
+    transform: translate(850px,28px);
     width: 30px;
     height: 27px;
+    position: fixed;
 }
 #cart{
-    position: absolute;
-    transform: translate(1155px,-72px);
+    transform: translate(920px,32px);
+    position: fixed;
     width: 20px;
     height: 23px;
 }
@@ -118,8 +158,7 @@ body{
     width: 15px;
     height: 15px;
     background-color: #00BA99;
-    position: absolute;
-    transform: translate(1165px,-76px);
+    transform: translate(1180px,-28px);
     font-size: 10px;
     display: flex;
     justify-content: center;
@@ -130,7 +169,7 @@ body{
     position: relative;
     width: 1270px;
     height: 700px;
-    transform: translate(0,78px);
+    transform: translate(0,60px);
     box-shadow: 0 6px 15px rgb(0,0,0,0.1);
 }
 .slider{
@@ -537,6 +576,7 @@ h2{
     border: none;
     transform: translate(0px,-60px);
 }
+
 .dots-container2{
     width: 500px;
     height: 16px;
